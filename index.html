@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Nayak</title>
+    <style>
+        body{
+            background: linear-gradient(#e66465, #9198e5); 
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed; 
+        }
+        
+        form{
+            background-color: white;
+        }
+        .calcy {
+            display: flex;
+            justify-content: center;
+            margin-top: 120px;
+        }
+
+        .calcy input{
+            width: 80px;
+            height: 90px;
+            background-color: rgb(215, 255, 242);
+            font-size: 30px;
+            margin-bottom: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .calcy input:hover{
+            background-color: rgb(164, 247, 220);
+        }
+        #clear{
+            width: 248px;
+            margin-bottom: 2px;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #ans{
+            width: 164px;
+           
+        }
+        #calc{
+            width: 324px;
+            margin-bottom: 2px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="calcy">
+        <form action="" name="form">
+            <input type="text" name="answer" id="calc"><br>
+            <div class="btn">
+                <input id="clear" type="button" value="clear" onclick="form.answer.value =''">
+                <input type="button" value="+" onclick="form.answer.value +='+'">
+                <br>
+                <input type="button" value="1" onclick="form.answer.value += '1'">
+                <input type="button" value="2" onclick="form.answer.value += '2'">
+                <input type="button" value="3" onclick="form.answer.value += '3'">
+                <input type="button" value="-" onclick="form.answer.value += '-'">
+                <br>
+                <input type="button" value="4" onclick="form.answer.value += '4'">
+                <input type="button" value="5" onclick="form.answer.value += '5'">
+                <input type="button" value="6" onclick="form.answer.value += '6'">
+                <input type="button" value="x" onclick="form.answer.value += 'x'">
+                <br>
+                <input type="button" value="7" onclick="form.answer.value += '7'">
+                <input type="button" value="8" onclick="form.answer.value += '8'">
+                <input type="button" value="9" onclick="form.answer.value += '9'">
+                <input type="button" value="/" onclick="form.answer.value += '/'">
+                <br>
+                <input type="button" value="." onclick="form.answer.value += '.'">
+                <input type="button" value="0" onclick="form.answer.value += '0'">
+                <input id="ans" type="button" value="Answer" onclick="form.answer.value = eval(form.answer.value)">
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
